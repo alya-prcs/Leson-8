@@ -1,0 +1,50 @@
+.text-box h3:nth-of-type(odd) {
+    color: pink;
+  }
+
+  .text-box p:not(#greycol):not(.yellow) {
+    color: grey;
+  }
+
+  .text-box div p {
+    color: red;
+  }
+
+  .text-box p:nth-child(4) {
+    color: green;
+  }
+
+  .text-box .yellow {
+    color: yellow;
+  }
+  .lesson-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Структурні псевдокласи для списків уроків */
+  .lesson-container li:first-child {
+    color: blue;
+  }
+
+  .lesson-container li:last-child {
+    color: purple;
+  }
+
+  /* Станові псевдокласи для списків уроків */
+  .lesson-container li:hover {
+    background-color: #f0f0f0;
+  }
+
+  .lesson-container li:active {
+    transform: scale(1.1);
+  }
+
+  .lesson-container li:focus {
+    outline: 2px solid orange;
+  }
+
+  .lesson-container li:nth-child(odd):not(:last-child) {
+    font-weight: bold;
+  }
+  
